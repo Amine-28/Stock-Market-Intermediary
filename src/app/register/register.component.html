@@ -1,0 +1,31 @@
+<div id="Sign">
+  <div class="panel panel-default" >
+          <div class="panel-heading" style="background-color:#d43f3a;font-style: italic;font-weight: bold">
+            <strong>Sign Up</strong>
+          </div>
+          <div class="panel-body">                         
+                  <div class="form-group">
+                      <label>Enter First Name</label>
+                      <input [(ngModel)]="contact.nom" class="form-control" type="text" />
+                  </div>
+                  <div class="form-group">
+                    <label>Enter Last Name</label>
+                    <input [(ngModel)]="contact.prenom"class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Enter DateOfBirth</label>
+                  <input [(ngModel)]="contact.dateNaissance" class="form-control" type="date" />
+                </div>
+                <div class="form-group">
+                  <label>Enter Email</label>
+                  <input [(ngModel)]="contact.email" class="form-control" type="text" />
+               </div>
+                <div class="form-group">
+                <label>Enter Phone Number</label>
+                <input [(ngModel)]="contact.tel" class="form-control" type="text" />
+               </div>
+                  <button style="float: right;" (click)="saveContact()" class="btn btn-danger">Register</button>
+           
+          </div>
+      </div>
+  </div>
